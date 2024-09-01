@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-[#f4f4f4] font-serif">
+    <header>
+        <nav class="flex  justify-center items-center">
+            <div class="logo">
+                <img src="/project from.png" alt="" class=" block h-24 w-24 border-white ml-14 pt-11">
+                <div class="text-right">
+                    <strong>ST. LAWRENCE COLLEGE</strong>
+                    <p>Chabhil, Kathmandu Nepal</p>
+                    <p>www.stlawrencecollege.com</p>
+                    <p>stlawrencecollege88@gmail.com</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="font-bold text-2xl text-center">Student Enrollment Application Form</h1>
+    <p class="font-bold font-serif text-center">Please fill out the following application form for student enrollment.</p>
+
+    <form action="#" method="post" class="   w-[900px]  max-w-[1200px] ml-[110px] bg-[#fff] p-[20px] border rounded-lg shadow-sm">
+        <div class=" flex flex-wrap gap-x-6 mb-[20px] justify-between">
+            <div class="form-group gap-3">
+                <label for="firstName" >First Name:</label>
+                <input id="firstName" class=" border-2 border-solid border-black w-60 p-2" type="text" placeholder="First Name" required>
+            </div>
+            <!-- <div class="form-group">
+                <label for="middleName" >Middle Name:</label>
+                <input id="middleName" class="border-2 border-solid border-black w-60" type="text" placeholder="Middle Name">
+            </div> -->
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input id="lastName" class="border-2 border-solid border-black w-60 p-2" type="text" placeholder="Last Name" required>
+            </div>
+        </div>
+
+        <div class="form-row flex flex-wrap gap-x-6 mb-[40px] justify-between">
+            <div class="gap-3">
+                <label for="birthDate">Birth Date:</label>
+                <input id="birthDate" class="border-2 border-solid border-black w-60 p-2" type="date" placeholder="mm/dd/yy" required>
+            </div>
+            <div class="space-x-3 p-2">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label class="radio-label"><input type="radio" name="gender" value="Male" class="" checked> Male:</label>
+                    <label class="radio-label"><input type="radio" name="gender" value="Female"> Female:</label>
+                    <label class="radio-label"><input type="radio" name="gender" value="Others"> Others:</label>
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="flex flex-wrap gap-x-6 mb-[20px] justify-between">
+            <div class="">
+                <label for="address">Contact   Address:</label>
+                <input id="address" class="border-2 border-solid border-black w-60 m-2 p-2" type="text" placeholder="TemporaryAddress">
+            </div>
+            <div class="">
+                <label for="contact">permanent Address:</label>
+                <input id="contact" class="border-2 border-solid border-black w-60 m-2 p-2" type="text" placeholder="City Village Ward No">
+            </div>
+        </div>
+        <div class="flex flex-wrap gap-x-6 mb-[20px] justify-between">
+            <div >
+                <label for="mobileNumber">Mobile Number:</label>
+                <input id="mobileNumber" class="border-2 border-solid border-black w-60 m-2 p-2" type="tel" placeholder="Enter Mobile Number" required>
+            </div>
+            <div class="">
+               <label for="nationality">Nationality:</label>
+               <input id="nationality" class="border-2 border-solid border-black w-60 m-2 p-2" type="text" placeholder="Nationality">
+           </div>
+        </div>
+<br>
+        <div class="flex flex-wrap gap-x-6 mb-[20px] justify-between">
+            <div class="">
+                <label for="email">Email:</label>
+                <input id="email" class="border-2 border-solid border-black w-60 m-2 p-2" type="email" placeholder="Valid Email-Id">
+            </div>
+            <div class="">
+                <label for="program">Program:</label>
+                <select id="program" class="border-2 border-solid border-black w-60 m-2 p-2">
+                    <option value="">Please Select</option>
+                    <option value="BCA">BCA</option>
+                    <option value="BSC.CSIT">BSC.CSIT</option>
+                    <option value="BBS">BBS</option>
+                    <option value="BSW">BSW</option>
+                    <option value="BA">BA</option>
+                    <option value="MBS">MBS</option>
+                </select>
+            </div>
+            <div class="flex flex-wrap gap-x-6 mb-[20px] justify-between">
+               <div class="">
+                  <label for="gpa">GPA of SEE:</label>
+                  <input type="text" class="border-2 border-solid border-black w-60 m-2 p-2" placeholder=" Gpa of SEE">
+               </div>
+
+               <div class="ml-[85px]">
+               <label for="highSchool">High School Name:</label>
+                           <input type="text" id="highSchool" class="border-2 border-solid border-black w-60 m-2 p-2"  placeholder="High School Name" required>
+                        </div>
+                     </div>
+                        <div class="flex flex-wrap gap-x-6 mb-[20px] justify-between">
+                         <div>
+                           <label for="gpa"> Obtained GPA of +2:</label>
+                           <input type="text" id="gpa" class="border-2 border-solid border-black w-60 m-2 p-2"  placeholder="GPA" required>
+                       </div>
+                       
+                       <div class="ml-[50px]">
+                           <label for="major">Intended Major:</label>
+                           <input type="text" id="major" class="border-2 border-solid border-black w-60 m-2 p-2"  placeholder="Intended Major" required>
+                           </div>
+                       </div>
+
+            <div class="form-group"></div>
+        </div>
+
+        <div class="flex items-center justify-center">
+
+        <button type="submit"    class="  h-7 w-18 bg-blue-600 text-white rounded-md ">Submit</button>
+      </div>
+    </form>
+ <script> 
+    
+        document.getElementById('enrollmentForm').addEventListener('submit', function(event) {
+            // Clear previous error messages
+            document.getElementById('firstNameError').innerText = '';
+            document.getElementById('lastNameError').innerText = '';
+            document.getElementById('emailError').innerText = '';
+
+            // Get input values
+            const firstName = document.getElementById('firstName').value.trim();
+            const lastName = document.getElementById('lastName').value.trim();
+            const email = document.getElementById('email').value.trim();
+
+            // Regular expressions for validation
+            const nameRegex = /^[A-Za-z\s]+$/;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            // Validation flags
+            let isValid = true;
+
+            // Validate First Name
+            if (!nameRegex.test(firstName) || firstName.length < 2) {
+                document.getElementById('firstNameError').innerText = 'Please enter a valid first name (at least 2 characters).';
+                isValid = false;
+            }
+
+            // Validate Last Name
+            if (!nameRegex.test(lastName) || lastName.length < 2) {
+                document.getElementById('lastNameError').innerText = 'Please enter a valid last name (at least 2 characters).';
+                isValid = false;
+            }
+
+            // Validate Email
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').innerText = 'Please enter a valid email address.';
+                isValid = false;
+            }
+
+            // If form is not valid, prevent submission
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+    </script>
+
+    <script src="/index.js"></script>
+</body>
+</html>
