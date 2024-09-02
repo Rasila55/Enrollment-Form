@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enrollment Form</title>
-    <link rel="stylesheet" href="./output.css">
+    <script src="https://cdn.tailwindcss.com"> </script>
+    <!-- <link rel="stylesheet" href="./output.css"> -->
 </head>
 <body class="bg-[#f4f4f4] font-serif">
     <header>
@@ -24,16 +25,12 @@
     <h1 class="font-bold text-2xl text-center">Student Enrollment Application Form</h1>
     <p class="font-bold font-serif text-center">Please fill out the following application form for student enrollment.</p>
 
-    <form action="#" method="post" class="   w-[900px]  max-w-[1200px] ml-[110px] bg-[#fff] p-[20px] border rounded-lg shadow-sm">
-        <div class=" flex flex-wrap gap-x-6 mb-[20px] justify-between">
+    <form id="enrollmentForm" action="#" method="post" class="w-[900px] max-w-[1200px] ml-[110px] bg-[#fff] p-[20px] border rounded-lg shadow-sm">
+        <div class="flex flex-wrap gap-x-6 mb-[20px] justify-between">
             <div class="form-group gap-3">
-                <label for="firstName" >First Name:</label>
-                <input id="firstName" class=" border-2 border-solid border-black w-60 p-2" type="text" placeholder="First Name" required>
+                <label for="firstName">First Name:</label>
+                <input id="firstName" class="border-2 border-solid border-black w-60 p-2" type="text" placeholder="First Name" required>
             </div>
-            <!-- <div class="form-group">
-                <label for="middleName" >Middle Name:</label>
-                <input id="middleName" class="border-2 border-solid border-black w-60" type="text" placeholder="Middle Name">
-            </div> -->
             <div class="form-group">
                 <label for="lastName">Last Name:</label>
                 <input id="lastName" class="border-2 border-solid border-black w-60 p-2" type="text" placeholder="Last Name" required>
@@ -43,46 +40,45 @@
         <div class="form-row flex flex-wrap gap-x-6 mb-[40px] justify-between">
             <div class="gap-3">
                 <label for="birthDate">Birth Date:</label>
-                <input id="birthDate" class="border-2 border-solid border-black w-60 p-2" type="date" placeholder="mm/dd/yy" required>
+                <input id="birthDate" class="border-2 border-solid border-black w-60 p-2" type="date" required>
             </div>
             <div class="space-x-3 p-2">
                 <label>Gender:</label>
                 <div class="radio-group">
-                    <label class="radio-label"><input type="radio" name="gender" value="Male" class="" checked> Male:</label>
-                    <label class="radio-label"><input type="radio" name="gender" value="Female"> Female:</label>
-                    <label class="radio-label"><input type="radio" name="gender" value="Others"> Others:</label>
+                    <label class="radio-label"><input type="radio" name="gender" value="Male" checked> Male</label>
+                    <label class="radio-label"><input type="radio" name="gender" value="Female"> Female</label>
+                    <label class="radio-label"><input type="radio" name="gender" value="Others"> Others</label>
                 </div>
             </div>
-           
         </div>
 
         <div class="flex flex-wrap gap-x-6 mb-[20px] justify-between">
-            <div class="">
-                <label for="address">Contact   Address:</label>
-                <input id="address" class="border-2 border-solid border-black w-60 m-2 p-2" type="text" placeholder="TemporaryAddress">
+            <div>
+                <label for="address">Contact Address:</label>
+                <input id="address" class="border-2 border-solid border-black w-60 m-2 p-2" type="text" placeholder="Temporary Address">
             </div>
-            <div class="">
-                <label for="contact">permanent Address:</label>
-                <input id="contact" class="border-2 border-solid border-black w-60 m-2 p-2" type="text" placeholder="City Village Ward No">
+            <div>
+                <label for="permanentAddress">Permanent Address:</label>
+                <input id="permanentAddress" class="border-2 border-solid border-black w-60 m-2 p-2" type="text" placeholder="City Village Ward No">
             </div>
         </div>
         <div class="flex flex-wrap gap-x-6 mb-[20px] justify-between">
-            <div >
+            <div>
                 <label for="mobileNumber">Mobile Number:</label>
                 <input id="mobileNumber" class="border-2 border-solid border-black w-60 m-2 p-2" type="tel" placeholder="Enter Mobile Number" required>
             </div>
-            <div class="">
-               <label for="nationality">Nationality:</label>
-               <input id="nationality" class="border-2 border-solid border-black w-60 m-2 p-2" type="text" placeholder="Nationality">
-           </div>
+            <div>
+                <label for="nationality">Nationality:</label>
+                <input id="nationality" class="border-2 border-solid border-black w-60 m-2 p-2" type="text" placeholder="Nationality">
+            </div>
         </div>
-<br>
+
         <div class="flex flex-wrap gap-x-6 mb-[20px] justify-between">
-            <div class="">
+            <div>
                 <label for="email">Email:</label>
                 <input id="email" class="border-2 border-solid border-black w-60 m-2 p-2" type="email" placeholder="Valid Email-Id">
             </div>
-            <div class="">
+            <div>
                 <label for="program">Program:</label>
                 <select id="program" class="border-2 border-solid border-black w-60 m-2 p-2">
                     <option value="">Please Select</option>
@@ -94,82 +90,63 @@
                     <option value="MBS">MBS</option>
                 </select>
             </div>
-            <div class="flex flex-wrap gap-x-6 mb-[20px] justify-between">
-               <div class="">
-                  <label for="gpa">GPA of SEE:</label>
-                  <input type="text" class="border-2 border-solid border-black w-60 m-2 p-2" placeholder=" Gpa of SEE">
-               </div>
+        </div>
 
-               <div class="ml-[85px]">
-               <label for="highSchool">High School Name:</label>
-                           <input type="text" id="highSchool" class="border-2 border-solid border-black w-60 m-2 p-2"  placeholder="High School Name" required>
-                        </div>
-                     </div>
-                        <div class="flex flex-wrap gap-x-6 mb-[20px] justify-between">
-                         <div>
-                           <label for="gpa"> Obtained GPA of +2:</label>
-                           <input type="text" id="gpa" class="border-2 border-solid border-black w-60 m-2 p-2"  placeholder="GPA" required>
-                       </div>
-                       
-                       <div class="ml-[50px]">
-                           <label for="major">Intended Major:</label>
-                           <input type="text" id="major" class="border-2 border-solid border-black w-60 m-2 p-2"  placeholder="Intended Major" required>
-                           </div>
-                       </div>
+        <div class="flex flex-wrap gap-x-6 mb-[20px] justify-between">
+            <div>
+                <label for="gpaSEE">GPA of SEE:</label>
+                <input id="gpaSEE" type="text" class="border-2 border-solid border-black w-60 m-2 p-2" placeholder="GPA of SEE">
+            </div>
+            <div>
+                <label for="highSchool">High School Name:</label>
+                <input id="highSchool" type="text" class="border-2 border-solid border-black w-60 m-2 p-2" placeholder="High School Name" required>
+            </div>
+        </div>
 
-            <div class="form-group"></div>
+        <div class="flex flex-wrap gap-x-6 mb-[20px] justify-between">
+            <div>
+                <label for="gpaPlus2">Obtained GPA of +2:</label>
+                <input id="gpaPlus2" type="text" class="border-2 border-solid border-black w-60 m-2 p-2" placeholder="GPA" required>
+            </div>
+            <div>
+                <label for="major">Intended Major:</label>
+                <input id="major" type="text" class="border-2 border-solid border-black w-60 m-2 p-2" placeholder="Intended Major" required>
+            </div>
         </div>
 
         <div class="flex items-center justify-center">
-
-        <button type="submit"    class="  h-7 w-18 bg-blue-600 text-white rounded-md ">Submit</button>
-      </div>
+            <button type="submit" class="h-7 w-18 bg-blue-600 text-white rounded-md">Submit</button>
+        </div>
     </form>
- <script> 
-    
-        document.getElementById('enrollmentForm').addEventListener('submit', function(event) {
-            // Clear previous error messages
-            document.getElementById('firstNameError').innerText = '';
-            document.getElementById('lastNameError').innerText = '';
-            document.getElementById('emailError').innerText = '';
 
-            // Get input values
+    <script>
+        document.getElementById('enrollmentForm').addEventListener('submit', function(event) {
             const firstName = document.getElementById('firstName').value.trim();
             const lastName = document.getElementById('lastName').value.trim();
             const email = document.getElementById('email').value.trim();
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-            // Regular expressions for validation
-            const nameRegex = /^[A-Za-z\s]+$/;
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            let valid = true;
+            let errorMessage = '';
 
-            // Validation flags
-            let isValid = true;
-
-            // Validate First Name
-            if (!nameRegex.test(firstName) || firstName.length < 2) {
-                document.getElementById('firstNameError').innerText = 'Please enter a valid first name (at least 2 characters).';
-                isValid = false;
+            if (firstName === '') {
+                valid = false;
+                errorMessage += 'First Name is required.\n';
+            }
+            if (lastName === '') {
+                valid = false;
+                errorMessage += 'Last Name is required.\n';
+            }
+            if (!emailPattern.test(email)) {
+                valid = false;
+                errorMessage += 'Please enter a valid email address.\n';
             }
 
-            // Validate Last Name
-            if (!nameRegex.test(lastName) || lastName.length < 2) {
-                document.getElementById('lastNameError').innerText = 'Please enter a valid last name (at least 2 characters).';
-                isValid = false;
-            }
-
-            // Validate Email
-            if (!emailRegex.test(email)) {
-                document.getElementById('emailError').innerText = 'Please enter a valid email address.';
-                isValid = false;
-            }
-
-            // If form is not valid, prevent submission
-            if (!isValid) {
-                event.preventDefault();
+            if (!valid) {
+                alert(errorMessage);
+                event.preventDefault(); // Prevent form submission
             }
         });
     </script>
-
-    <script src="/index.js"></script>
 </body>
 </html>
